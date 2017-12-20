@@ -2,40 +2,6 @@
 
 <?php
 
-/*
-$conn = mysqli_connect("localhost","root","");
-if(!$conn)
-{
-	echo "error";
-}
-else
-{
-	echo "success";
-}
-
-if (!mysqli_select_db("test_db")) {
-    echo "Unable to select mydbname: " . mysqli_error();
-    exit;
-}
-
-$sql = "SELECT * FROM stud2";
-$result = mysqli_query($sql);
-
-
-while($row = mysqli_fetch_assoc($result)) {
-        echo "id: " . $row["id"]. " - Name: " . $row["name"]."<br>";
-    }
-
-
-
-
-
-mysqli_close($conn);
-
-*/
-
-
-
 $conn = mysqli_connect("localhost", "root", "");
 
 if (!$conn) {
@@ -84,8 +50,6 @@ echo "<tr>";
 	
 	echo "</tr>";
 }
-
-//mysql_free_result($result);
 
 ?>
 </table>
